@@ -4,12 +4,10 @@
 cmake_minimum_required(VERSION 3.5)
 project(gazebo_world_p109)
 
-find_package(ament_cmake REQUIRED)
+find_package(catkin REQUIRED)
 
 # Install files
 install(DIRECTORY 
         models
         worlds
         DESTINATION share/${PROJECT_NAME})
-
-ament_package()
